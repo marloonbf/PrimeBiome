@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrimeBiome - Exclusive Offer</title>
 
   <!-- Google tag (gtag.js) -->
@@ -32,7 +33,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: url('./imgg.jpeg') no-repeat center center;
+      background: url('./imgg.jpeg') no-repeat center center fixed;
       background-size: cover;
       height: 100vh;
       display: flex;
@@ -43,23 +44,24 @@
     .cookie-modal {
       position: relative;
       background-color: #fff;
-      width: 400px;
-      max-width: 90%;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-      border-radius: 8px;
+      width: 90%;
+      max-width: 420px;
+      padding: 24px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
       text-align: left;
     }
 
     .cookie-modal h2 {
       margin-top: 0;
-      font-size: 18px;
+      font-size: 20px;
       color: #000;
     }
 
     .cookie-modal p {
-      font-size: 14px;
+      font-size: 16px;
       color: #333;
+      line-height: 1.4em;
     }
 
     .cookie-modal a {
@@ -69,17 +71,17 @@
 
     .cookie-modal .actions {
       text-align: right;
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     .cookie-modal button {
       background-color: #007BFF;
       color: white;
       border: none;
-      padding: 8px 16px;
-      font-size: 14px;
+      padding: 10px 20px;
+      font-size: 16px;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 6px;
     }
 
     .close-btn {
@@ -88,9 +90,21 @@
       right: 15px;
       background: none;
       border: none;
-      font-size: 16px;
+      font-size: 20px;
       cursor: pointer;
       color: #888;
+    }
+
+    @media (max-width: 480px) {
+      .cookie-modal {
+        padding: 20px;
+      }
+      .cookie-modal p {
+        font-size: 15px;
+      }
+      .cookie-modal button {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
